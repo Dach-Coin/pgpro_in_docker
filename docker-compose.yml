@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+    postgres:
+        image: pgpro_11.4.1:latest
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        logging:
+          options:
+            max-size: 10m
+            max-file: "3"
+        ports:
+            - '5432:5432'
+        volumes:
+            - ./pg_data:/var/lib/postgresql/data
