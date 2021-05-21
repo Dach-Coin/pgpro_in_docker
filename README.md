@@ -13,3 +13,7 @@
 5. Компонуем контейнер:
     - `docker compose up -d` (команда для Windows)
     - `docker-compose up -d` (команда для linux, потребуется предварительная установка утилиты docker-compose, а также изменить тег `version` в docker-compose.yml: `version: "3.3"`)
+
+### Примечание
+
+Сервер postgres собран с языковыми настройками: `ru_RU.UTF-8`
