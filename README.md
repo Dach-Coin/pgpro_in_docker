@@ -17,3 +17,9 @@
 ### Примечание
 
 Сервер postgres собран с языковыми настройками: `ru_RU.UTF-8`
+
+### Установка PgAdmin4
+
+`docker run --rm -p 5050:80 --network pgpro11_default --name pgadmin4 -e "PGADMIN_DEFAULT_EMAIL=admin@admin.com" -e "PGADMIN_DEFAULT_PASSWORD=admin" -d dpage/pgadmin4`
+
+(где `network` - имя сети, созданной раннее в процессе установки контейнера `pgpro11_postgres`)
